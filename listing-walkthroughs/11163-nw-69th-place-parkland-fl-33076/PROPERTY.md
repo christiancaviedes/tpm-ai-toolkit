@@ -25,26 +25,36 @@
 ## Photos
 
 - Source images: 50 downloaded → `source-images/01..50-original.jpg` (1280px, listing order)
-- Curated hero set: pending curation (target 6–10 rooms)
+- Vision pass: all 50 classified, zero text overlays found (nothing deleted)
+- Curated hero set: 9 rooms → `scene-sources/scene-01..09-*.jpg` (16:9, 1920x1080)
 
 ## Shot List
 
 | # | Scene clip | Source photo | Room type | Camera move |
 |---|------------|--------------|-----------|-------------|
-| — | pending curation | | | |
+| 1 | room-01-exterior.mp4 | 01-original.jpg | Exterior front | Slow approach (zoom-in) |
+| 2 | room-02-entry.mp4 | 08-original.jpg | Foyer | Threshold push-in |
+| 3 | room-03-living.mp4 | 10-original.jpg | Formal living | Lateral glide toward french doors |
+| 4 | room-04-dining.mp4 | 13-original.jpg | Dining | Slow approach to table |
+| 5 | room-05-kitchen.mp4 | 18-original.jpg | Kitchen | Glide along waterfall island |
+| 6 | room-06-greatroom.mp4 | 23-original.jpg | Great room | Push-in to fireplace + pool view |
+| 7 | room-07-primary-bedroom.mp4 | 31-original.jpg | Primary bedroom | Calm push-in |
+| 8 | room-08-primary-bath.mp4 | 32-original.jpg | Primary bath | Threshold push-in to wet room |
+| 9 | room-09-pool.mp4 | 47-original.jpg | Pool / lanai | Lateral crane reveal with rise |
 
 ## Build Choices
 
 - **Style:** Cinematic (per-room camera moves)
 - **Rooms:** Auto-curate 6–10 hero shots
 - **Output ratio:** Both — 16:9 master + 9:16 social cut
-- **Engine:** Seedance (Higgsfield unified API; Kling fallback)
+- **Engine:** ffmpeg Ken Burns (interim build) → Higgsfield DoP Standard re-render when API credits are added (Seedance/Kling no longer offered on the platform)
 
 ## Outputs
 
-- Master: `final/walkthrough-16x9.mp4` (pending)
-- Social: `final/walkthrough-9x16.mp4` (pending)
-- Scene clips: `scenes/` (pending)
+- Master: `final/walkthrough-16x9.mp4` — 45s, 1080p30, silent (Ken Burns build)
+- Social: `final/walkthrough-9x16.mp4` — 45s, 1080x1920, silent
+- Scene clips: `scenes/room-01..09-*.mp4` — 5s each
+- Pending: cinematic re-render of scenes via Higgsfield DoP Standard (blocked on API credits; 81 needed)
 
 ## Run Notes
 
