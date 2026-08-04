@@ -32,7 +32,7 @@
 
 | # | Scene clip | Source photo | Room type | Camera move |
 |---|------------|--------------|-----------|-------------|
-| 1 | room-01-exterior.mp4 | 01-original.jpg | Exterior front | Slow approach (zoom-in) |
+| 1 | room-01-exterior.mp4 | 01-original.jpg | Exterior front | Slow aerial-style approach |
 | 2 | room-02-entry.mp4 | 08-original.jpg | Foyer | Threshold push-in |
 | 3 | room-03-living.mp4 | 10-original.jpg | Formal living | Lateral glide toward french doors |
 | 4 | room-04-dining.mp4 | 13-original.jpg | Dining | Slow approach to table |
@@ -47,14 +47,14 @@
 - **Style:** Cinematic (per-room camera moves)
 - **Rooms:** Auto-curate 6–10 hero shots
 - **Output ratio:** Both — 16:9 master + 9:16 social cut
-- **Engine:** ffmpeg Ken Burns (interim build) → Higgsfield DoP Standard re-render when API credits are added (Seedance/Kling no longer offered on the platform)
+- **Engine:** Kling 3.0 (std, silent) via Higgsfield MCP connector — the repo's named alternate engine; Seedance 2.0 exceeded the credit budget (45 cr/clip vs 7.5)
 
 ## Outputs
 
-- Master: `final/walkthrough-16x9.mp4` — 45s, 1080p30, silent (Ken Burns build)
-- Social: `final/walkthrough-9x16.mp4` — 45s, 1080x1920, silent
-- Scene clips: `scenes/room-01..09-*.mp4` — 5s each
-- Pending: cinematic re-render of scenes via Higgsfield DoP Standard (blocked on API credits; 81 needed)
+- Master: `final/walkthrough-16x9.mp4` — 45.3s, 1080p30, silent, AI-cinematic (Kling 3.0)
+- Social: `final/walkthrough-9x16.mp4` — 45.3s, 1080x1920, silent
+- Scene clips: `scenes/room-01..09-*.mp4` — 5s Kling 3.0 image-to-video each (720p24 source, normalized 1080p30)
+- Cost: 67.5 Higgsfield credits (9 × 7.5); warp-check passed on all 9 scenes, zero regenerations needed
 
 ## Run Notes
 
