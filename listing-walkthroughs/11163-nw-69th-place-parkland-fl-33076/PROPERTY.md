@@ -1,6 +1,7 @@
 # 11163 NW 69th Place, Parkland, FL 33076
 
 **Zillow:** https://www.zillow.com/homedetails/11163-NW-69TH-Place-Parkland-FL-33076/42827020_zpid/
+**MLS#:** B26059818
 **Status:** FOR_SALE
 **Slug:** `11163-nw-69th-place-parkland-fl-33076`
 **Build date:** 2026-08-04
@@ -9,20 +10,21 @@
 
 | Price | Beds | Baths | Living area | Year built | Home type |
 |-------|------|-------|-------------|------------|-----------|
-| $1,499,000 | 4 | 3 | 3,650 sqft | TBC | Single family |
+| $1,250,000 | 5 | 3 | 2,686 sqft | 1999 | Single family |
 
-> Specs sourced from listing mirrors (Movoto/Redfin); to be confirmed against the Zillow scrape.
-> Listing highlights: fully renovated designer home, ~1/3-acre corner lot, water views,
-> Taj Mahal quartzite kitchen with 10-ft waterfall island, new Cafe appliances,
-> 24x48 matte porcelain tile, spa-style baths (~$225K in upgrades).
+> Specs confirmed from the live MLS listing data (Zillow page is bot-walled;
+> photos and facts sourced from the listing's Redfin mirror, same MLS feed).
+> Listing highlights: exquisitely fully renovated designer home, rare ~1/3-acre
+> cone-shaped corner lot, water views, Taj Mahal quartzite kitchen with 10-ft
+> waterfall island, new Cafe appliances, 24x48 matte porcelain tile, spa-style baths.
 
 ## Agent / Brokerage
 
-- TBC from Zillow attribution data during scrape.
+- Laura Sanders — 954-650-0827 (listing agent per MLS attribution)
 
 ## Photos
 
-- Source images: pending scrape → `source-images/NN-original.jpg`
+- Source images: 50 downloaded → `source-images/01..50-original.jpg` (1280px, listing order)
 - Curated hero set: pending curation (target 6–10 rooms)
 
 ## Shot List
@@ -36,7 +38,7 @@
 - **Style:** Cinematic (per-room camera moves)
 - **Rooms:** Auto-curate 6–10 hero shots
 - **Output ratio:** Both — 16:9 master + 9:16 social cut
-- **Engine:** Seedance 2.0 (fallback: Kling 3.0)
+- **Engine:** Seedance (Higgsfield unified API; Kling fallback)
 
 ## Outputs
 
@@ -47,4 +49,7 @@
 ## Run Notes
 
 - Pipeline per charlesdove977/re-walkthrough-pro skill docs; Apify replaced by direct
-  Playwright scrape (user choice), Higgsfield driven via REST API with user credentials.
+  scrape (user choice). Zillow blocks all fetch paths (PerimeterX), so photos came from
+  the listing's Redfin CDN mirror — same MLS photo set, full resolution, listing order.
+- Higgsfield driven via REST API with user credentials; master animation prompt in
+  reel-prompt.md (from user's reference reel).
