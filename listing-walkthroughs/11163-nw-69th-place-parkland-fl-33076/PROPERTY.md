@@ -55,6 +55,8 @@
 - Social: `final/walkthrough-9x16.mp4` — 45.3s, 1080x1920, silent
 - Scene clips: `scenes/room-01..09-*.mp4` — 5s Kling 3.0 image-to-video each (720p24 source, normalized 1080p30)
 - Cost: 67.5 Higgsfield credits (9 × 7.5); warp-check passed on all 9 scenes, zero regenerations needed
+- Full tour: `final/walkthrough-full-16x9.mp4` + `final/walkthrough-full-9x16.mp4` — 2:48, all 50
+  photos in tour order (9 AI-cinematic Kling scenes at 5s + 41 Ken-Burns scenes at 3s)
 
 ## Run Notes
 
